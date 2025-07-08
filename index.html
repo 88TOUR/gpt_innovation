@@ -2,48 +2,22 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>여행 밸런스게임</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>여행 성향 테스트</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <div id="app">
-    <!-- ① 시작 페이지 -->
-    <section id="start" class="view active">
-      <h1>여행 밸런스게임</h1>
-      <p>12개의 두 갈래 질문으로<br />당신의 여행 성향을 알아보세요!</p>
-      <button id="startBtn" class="btn primary">시작하기</button>
-    </section>
-
-    <!-- ② 질문 페이지 -->
-    <section id="question" class="view">
-      <div class="progress">
-        <div id="progressFill" class="fill"></div>
-        <span id="progressText">1 / 12</span>
-      </div>
-      <h2 id="questionText"></h2>
-      <div class="option-wrap">
-        <button id="optA" data-choice="a" class="option"></button>
-        <button id="optB" data-choice="b" class="option"></button>
-      </div>
-    </section>
-
-    <!-- ③ 결과 페이지 -->
-    <section id="result" class="view">
-      <h1 id="typeEmoji">🎉</h1>
-      <h2 id="typeName"></h2>
-      <p id="typeDesc"></p>
-
-      <h3>추천 코스</h3>
-      <ul id="courseList"></ul>
-
-      <div class="actions">
-        <button id="retryBtn" class="btn">다시하기</button>
-        <button id="shareBtn" class="btn outline">SNS 공유</button>
-      </div>
-    </section>
+<body class="start-page">
+  <div class="container">
+    <div class="intro">
+      <h1>어떤 여행자 타입인가요?</h1>
+      <p>12개의 질문에 답하고 나만의 여행 코스를 찾아보세요!</p>
+      <button id="startBtn">시작하기</button>
+    </div>
   </div>
-
-  <script src="app.js"></script>
+  <script>
+    document.getElementById("startBtn").addEventListener("click", function () {
+      window.location.href = "quiz.html";
+    });
+  </script>
 </body>
 </html>
