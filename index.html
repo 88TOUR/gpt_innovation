@@ -3,21 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>여행 성향 테스트</title>
+  <title>Colorin | 삶에 색채를 더하다</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard&display=swap" rel="stylesheet" />
 </head>
-<body class="start-page">
-  <div class="container">
-    <div class="intro">
-      <h1>어떤 여행자 타입인가요?</h1>
-      <p>12개의 질문에 답하고 나만의 여행 코스를 찾아보세요!</p>
-      <button id="startBtn">시작하기</button>
+<body>
+  <header class="header">
+    <h1 class="logo">Colorin</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">소개</a></li>
+        <li><a href="#services">서비스</a></li>
+        <li><a href="#portfolio">콘텐츠</a></li>
+        <li><a href="#reviews">후기</a></li>
+        <li><a href="#contact">문의</a></li>
+      </ul>
+    </nav>
+    <div class="external-links">
+      <a href="https://instagram.com" target="_blank">인스타그램</a>
+      <a href="https://blog.naver.com" target="_blank">블로그</a>
+      <a href="/assets/Colorin-Guide.pdf" download>PDF</a>
     </div>
-  </div>
-  <script>
-    document.getElementById("startBtn").addEventListener("click", function () {
-      window.location.href = "quiz.html";
-    });
-  </script>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section id="about" class="section">
+      <h2>소개</h2>
+      <p class="philosophy">“모든 사람에게는, 그들 본연의 색(色)이 있다”</p>
+      <p class="slogan">삶에 색채를 더하다</p>
+      <p>[Colorin]은 사람들이 자기만의 색을 찾고, 자기계발과 브랜딩을 시작할 수 있도록 돕는 브랜드입니다.</p>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section beige">
+      <h2>서비스 / 프로그램</h2>
+      <ul class="service-list">
+        <li>🌱 1:1 상담 및 가치관 정리</li>
+        <li>📚 강연 / 클래스 / 자기계발 컨설팅</li>
+        <li>🧠 성향 분석 및 심리 검사</li>
+      </ul>
+      <a class="btn" href="/assets/Colorin-Guide.pdf" download>PDF 다운로드</a>
+      <a class="btn outline" href="https://form.example.com" target="_blank">신청하러 가기</a>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section">
+      <h2>콘텐츠 / 포트폴리오</h2>
+      <div class="portfolio-gallery">
+        <div class="card">
+          <img src="assets/images/blog1.jpg" alt="글 이미지" />
+          <p>글쓰기 - 자기다움을 찾는 글</p>
+        </div>
+        <div class="card">
+          <img src="assets/images/video1.jpg" alt="영상" />
+          <p>영상 - 하루 루틴 브이로그</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="section beige">
+      <h2>후기</h2>
+      <div class="review-cards">
+        <div class="review">
+          <img src="assets/images/review1.jpg" alt="리뷰어 사진" />
+          <p>“진짜 나를 찾는 여정의 시작이었어요.” - 수강생 A</p>
+        </div>
+        <div class="review">
+          <img src="assets/images/review2.jpg" alt="리뷰어 사진" />
+          <p>“Colorin 덕분에 책을 출간했어요!” - 작가 B</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2>문의 및 신청</h2>
+      <p>함께하고 싶다면, 아래 버튼을 눌러주세요.</p>
+      <a class="btn" href="mailto:contact@colorin.co">문의하기</a>
+      <a class="btn outline" href="https://form.example.com" target="_blank">바로 신청하기</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Colorin. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
